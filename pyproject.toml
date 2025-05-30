@@ -3,8 +3,27 @@ name = "comfyui"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.11"
+dependencies = [
+    "comfyui-frontend-package==1.14.6",
+    "torch==2.5.1+cu124",
+    "torchsde",
+    "torchvision==0.20.1+cu124",
+    "torchaudio",
+    "numpy<2.0",
+    "einops",
+    "transformers>=4.28.1",
+    "tokenizers>=0.13.3",
+    "sentencepiece",
+    "safetensors>=0.4.2",
+    "aiohttp>=3.11.8",
+    "yarl>=1.18.0",
+    "pyyaml",
+    "Pillow",
+    "scipy",
+    "tqdm",
+    "psutil",
+]
 
 [tool.uv]
 environments = ["platform_machine == 'x86_64' and sys_platform == 'linux'"]
@@ -17,5 +36,5 @@ explicit = true
 [tool.uv.sources]
 pytorch-triton = { index = "pytorch-cu124" }
 torch = { index = "pytorch-cu124"}
-torchvision = { index = "pytorch-124" }
-triton = { index = "pytorch-124" }
+torchvision = { index = "pytorch-cu124" }
+triton = { index = "pytorch-cu124" }
