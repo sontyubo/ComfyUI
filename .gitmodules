@@ -1,0 +1,3 @@
+[submodule "/workspace/ComfyUI/custom_nodes/rgthree-comfy"]
+	path = /workspace/ComfyUI/custom_nodes/rgthree-comfy
+	url = https://github.com/rgthree/rgthree-comfy
