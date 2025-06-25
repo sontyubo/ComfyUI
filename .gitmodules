@@ -1,3 +1,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/rgthree-comfy"]
 	path = /workspace/ComfyUI/custom_nodes/rgthree-comfy
 	url = https://github.com/rgthree/rgthree-comfy
+[submodule "/workspace/ComfyUI/custom_nodes/was-node-suite-comfyui"]
+	path = /workspace/ComfyUI/custom_nodes/was-node-suite-comfyui
+	url = https://github.com/WASasquatch/was-node-suite-comfyui
