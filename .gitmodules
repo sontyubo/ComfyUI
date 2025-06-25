@@ -22,3 +22,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/prompt-generator-comfyui"]
 	path = /workspace/ComfyUI/custom_nodes/prompt-generator-comfyui
 	url = https://github.com/alpertunga-bile/prompt-generator-comfyui
+[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Manager"]
+	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+	url = https://github.com/Comfy-Org/ComfyUI-Manager
