@@ -4,3 +4,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/was-node-suite-comfyui"]
 	path = /workspace/ComfyUI/custom_nodes/was-node-suite-comfyui
 	url = https://github.com/WASasquatch/was-node-suite-comfyui
+[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts"]
+	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
