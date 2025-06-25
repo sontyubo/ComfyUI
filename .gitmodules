@@ -7,3 +7,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts"]
 	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
 	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus"]
+	path = /workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+	url = https://github.com/cubiq/ComfyUI_IPAdapter_plus
