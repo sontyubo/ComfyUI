@@ -19,3 +19,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes"]
 	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes
 	url = https://github.com/jjkramhoeft/ComfyUI-Jjk-Nodes
+[submodule "/workspace/ComfyUI/custom_nodes/prompt-generator-comfyui"]
+	path = /workspace/ComfyUI/custom_nodes/prompt-generator-comfyui
+	url = https://github.com/alpertunga-bile/prompt-generator-comfyui
