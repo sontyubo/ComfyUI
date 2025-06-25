@@ -13,3 +13,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger"]
 	path = /workspace/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger
 	url = https://github.com/pythongosssss/ComfyUI-WD14-Tagger
+[submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes"]
+	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes
+	url = https://github.com/radius5-study/copainter-custom-nodes
