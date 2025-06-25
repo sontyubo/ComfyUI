@@ -25,3 +25,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Manager"]
 	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
 	url = https://github.com/Comfy-Org/ComfyUI-Manager
+[submodule "/workspace/ComfyUI/custom_nodes/comfyui-job-iterator"]
+	path = /workspace/ComfyUI/custom_nodes/comfyui-job-iterator
+	url = https://github.com/ali1234/comfyui-job-iterator
