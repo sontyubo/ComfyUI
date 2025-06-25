@@ -16,3 +16,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes"]
 	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes
 	url = https://github.com/radius5-study/copainter-custom-nodes
+[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes"]
+	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes
+	url = https://github.com/jjkramhoeft/ComfyUI-Jjk-Nodes
