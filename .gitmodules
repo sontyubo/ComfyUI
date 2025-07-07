@@ -41,3 +41,7 @@
 	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes-feat-switch-latent
 	url = https://github.com/radius5-study/copainter-custom-nodes
 	branch = feat/switch-latent
+[submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes-main"]
+	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes-main
+	url = https://github.com/radius5-study/copainter-custom-nodes
+	branch = main
