@@ -22,4 +22,5 @@ venv/
 *.log
 web_custom_versions/
 .DS_Store
-tmp/roberta-large-ner-english/pytorch_model.bin
+tmp/*
+.gitmodules.bak
