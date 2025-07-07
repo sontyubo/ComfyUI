@@ -13,9 +13,6 @@
 [submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger"]
 	path = /workspace/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger
 	url = https://github.com/pythongosssss/ComfyUI-WD14-Tagger
-[submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes"]
-	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes
-	url = https://github.com/radius5-study/copainter-custom-nodes
 [submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes"]
 	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes
 	url = https://github.com/jjkramhoeft/ComfyUI-Jjk-Nodes
@@ -28,3 +25,15 @@
 [submodule "/workspace/ComfyUI/custom_nodes/comfyui-job-iterator"]
 	path = /workspace/ComfyUI/custom_nodes/comfyui-job-iterator
 	url = https://github.com/ali1234/comfyui-job-iterator
+[submodule "/workspace/ComfyUI/custom_nodes/copainter-colorization-custom-nodes"]
+	path = /workspace/ComfyUI/custom_nodes/copainter-colorization-custom-nodes
+	url = https://github.com/radius5-study/copainter-colorization-custom-nodes
+[submodule "/workspace/ComfyUI/custom_nodes/comfyui-prompt-generator"]
+	path = /workspace/ComfyUI/custom_nodes/comfyui-prompt-generator
+	url = https://github.com/radius5-study/comfyui-prompt-generator
+[submodule "/workspace/ComfyUI/custom_nodes/comfyui-content-moderator"]
+	path = /workspace/ComfyUI/custom_nodes/comfyui-content-moderator
+	url = https://github.com/radius5-study/comfyui-content-moderator
+[submodule "/workspace/ComfyUI/custom_nodes/comfyui-image-size-limiter"]
+	path = /workspace/ComfyUI/custom_nodes/comfyui-image-size-limiter
+	url = https://github.com/radius5-study/comfyui-image-size-limiter

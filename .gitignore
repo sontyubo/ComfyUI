@@ -1,4 +1,5 @@
 __pycache__/
+custom_nodes/__pycache__/
 *.py[cod]
 /output/
 /input/
@@ -21,3 +22,4 @@ venv/
 *.log
 web_custom_versions/
 .DS_Store
+tmp/roberta-large-ner-english/pytorch_model.bin

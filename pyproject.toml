@@ -10,16 +10,16 @@ dependencies = [
     "torchsde",
     "torchvision==0.20.1+cu124",
     "torchaudio",
-    "numpy>=1.25.0",
+    "numpy==1.26.3",
     "einops",
-    "transformers>=4.28.1",
+    "transformers[sentencepiece]>=4.28.1",
     "tokenizers>=0.13.3",
     "sentencepiece",
     "safetensors>=0.4.2",
     "aiohttp>=3.11.8",
     "yarl>=1.18.0",
     "pyyaml",
-    "pillow",
+    "pillow==10.2.0",
     "scipy",
     "tqdm",
     "psutil",
@@ -38,6 +38,38 @@ dependencies = [
     "uv>=0.7.13",
     "chardet>=5.2.0",
     "onnxruntime>=1.22.0",
+    "cmake>=4.0.3",
+    "fairscale>=0.4.4",
+    "imageio>=2.37.0",
+    "joblib>=1.5.1",
+    "matplotlib>=3.10.3",
+    "numba>=0.61.2",
+    "opencv-python-headless[ffmpeg]>=4.11.0.86",
+    "pilgram>=1.2.1",
+    "rembg>=2.0.66",
+    "scikit-image>=0.23.2",
+    "scikit-learn>=1.7.0",
+    "timm>=0.4.12",
+    "img2texture",
+    "cstr",
+    "ffmpy",
+    "cython==3.0.8",
+    "opencv-python==4.9.0.80",
+    "pytoshop-fix-packbits>=1.1.8",
+    "six==1.16.0",
+    "cairosvg>=2.7.1",
+    "vtracer>=0.6.11",
+    "pydantic>=2.10.5",
+    "accelerate>=1.8.1",
+    "optimum[onnxruntime-gpu]>=1.26.1",
+    "peft>=0.15.2",
+    "triton>=3.1.0 ; sys_platform == 'linux'",
+    "bitsandbytes>=0.46.0 ; sys_platform == 'linux'",
+    "optimum-quanto ; sys_platform != 'linux'",
+    "pytoshop==1.2.0",
+    "google-genai>=1.21.1",
+    "nltk>=3.9.1",
+    "gdfs",
 ]
 
 [tool.uv]
@@ -53,3 +85,7 @@ pytorch-triton = { index = "pytorch-cu124" }
 torch = { index = "pytorch-cu124"}
 torchvision = { index = "pytorch-cu124" }
 triton = { index = "pytorch-cu124" }
+img2texture = { git = "https://github.com/WASasquatch/img2texture.git" }
+cstr = { git = "https://github.com/WASasquatch/cstr" }
+ffmpy = { git = "https://github.com/WASasquatch/ffmpy.git" }
+gdfs = { git = "ssh://git@github.com/radius5-study/google_drive_buckup.git" }
