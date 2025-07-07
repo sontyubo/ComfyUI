@@ -37,3 +37,7 @@
 [submodule "/workspace/ComfyUI/custom_nodes/comfyui-image-size-limiter"]
 	path = /workspace/ComfyUI/custom_nodes/comfyui-image-size-limiter
 	url = https://github.com/radius5-study/comfyui-image-size-limiter
+[submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes-feat-switch-latent"]
+	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes-feat-switch-latent
+	url = https://github.com/radius5-study/copainter-custom-nodes
+	branch = feat/switch-latent
