@@ -6,10 +6,12 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "comfyui-frontend-package==1.14.6",
-    "torch==2.5.1+cu124",
+    # "torch==2.5.1+cu124",
+    "torch==2.6.0+cu124",
     "torchsde",
-    "torchvision==0.20.1+cu124",
-    "torchaudio",
+    #"torchvision==0.20.1+cu124",
+    "torchvision==0.21.0+cu124",
+    "torchaudio==2.6.0+cu124",
     "numpy==1.26.3",
     "einops",
     "transformers[sentencepiece]>=4.28.1",
@@ -68,7 +70,7 @@ dependencies = [
     "optimum-quanto ; sys_platform != 'linux'",
     "pytoshop==1.2.0",
     "google-genai>=1.21.1",
-    "nltk>=3.9.1",
+    "nltk==3.8.1",
     "gdfs",
 ]
 
@@ -84,6 +86,7 @@ explicit = true
 pytorch-triton = { index = "pytorch-cu124" }
 torch = { index = "pytorch-cu124"}
 torchvision = { index = "pytorch-cu124" }
+torchaudio = { index = "pytorch-cu124" }
 triton = { index = "pytorch-cu124" }
 img2texture = { git = "https://github.com/WASasquatch/img2texture.git" }
 cstr = { git = "https://github.com/WASasquatch/cstr" }
