@@ -1,0 +1,365 @@
+{
+  "4": {
+    "inputs": {
+      "ckpt_name": "illustriousXL20_v20.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "7": {
+    "inputs": {
+      "text": [
+        "165",
+        0
+      ],
+      "clip": [
+        "174",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "17": {
+    "inputs": {
+      "samples": [
+        "74",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "59": {
+    "inputs": {
+      "pixels": [
+        "153",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "71": {
+    "inputs": {
+      "text": "lowres, bad anatomy, bad hands, text, error, missing finger, extra digits, fewer digits, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry, blush, (sketch:1.2), ",
+      "clip": [
+        "174",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "74": {
+    "inputs": {
+      "seed": [
+        "187",
+        0
+      ],
+      "steps": 20,
+      "cfg": 5,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "174",
+        0
+      ],
+      "positive": [
+        "90",
+        0
+      ],
+      "negative": [
+        "90",
+        1
+      ],
+      "latent_image": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "90": {
+    "inputs": {
+      "strength": 0.6,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "71",
+        0
+      ],
+      "control_net": [
+        "91",
+        0
+      ],
+      "image": [
+        "153",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "LineartCN"
+    }
+  },
+  "91": {
+    "inputs": {
+      "control_net_name": "lineart-v2-hard-fp16.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "LoadControlNet"
+    }
+  },
+  "94": {
+    "inputs": {
+      "image": "0b85567f-accd-4c25-8cd7-c98bb113fc77_0.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "LoadImage"
+    }
+  },
+  "114": {
+    "inputs": {
+      "image": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "GetImageSize"
+    }
+  },
+  "132": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "180",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "152": {
+    "inputs": {
+      "resolution": 1280,
+      "resampling": "lanczos",
+      "img": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "ResizeTargetResolution",
+    "_meta": {
+      "title": "Resize Target Resolution"
+    }
+  },
+  "153": {
+    "inputs": {
+      "img": [
+        "152",
+        0
+      ]
+    },
+    "class_type": "ConvertGrey",
+    "_meta": {
+      "title": "ConvertGrey"
+    }
+  },
+  "157": {
+    "inputs": {
+      "img": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "ConvertGrey",
+    "_meta": {
+      "title": "ConvertGrey"
+    }
+  },
+  "165": {
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "true",
+      "text_a": [
+        "167",
+        0
+      ],
+      "text_b": [
+        "182",
+        0
+      ],
+      "text_c": [
+        "168",
+        0
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "167": {
+    "inputs": {
+      "text": ""
+    },
+    "class_type": "JjkText",
+    "_meta": {
+      "title": "TriggerWords"
+    }
+  },
+  "168": {
+    "inputs": {
+      "text": "masterpiece, high score, great score, absurdres, lineart,"
+    },
+    "class_type": "JjkText",
+    "_meta": {
+      "title": "QualityTag"
+    }
+  },
+  "174": {
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "sdxl-boldline.safetensors",
+        "strength": 0
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "stroke_exp005.safetensors",
+        "strength": 0
+      },
+      "lora_3": {
+        "on": true,
+        "lora": "sdxl-lineart_illustriousXLv2_01.safetensors",
+        "strength": 0.5
+      },
+      "lora_4": {
+        "on": true,
+        "lora": "default-ill-v2.safetensors",
+        "strength": 0.5
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)",
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "176": {
+    "inputs": {
+      "width": [
+        "114",
+        0
+      ],
+      "height": [
+        "114",
+        1
+      ],
+      "size_threshold": 1024,
+      "convert_alpha": false,
+      "image": [
+        "157",
+        0
+      ]
+    },
+    "class_type": "InkingPostprocess",
+    "_meta": {
+      "title": "Postprocess"
+    }
+  },
+  "177": {
+    "inputs": {
+      "text": ""
+    },
+    "class_type": "JjkText",
+    "_meta": {
+      "title": "UserPrompt"
+    }
+  },
+  "180": {
+    "inputs": {
+      "image": [
+        "176",
+        0
+      ],
+      "alpha": [
+        "176",
+        1
+      ]
+    },
+    "class_type": "JoinImageWithAlpha",
+    "_meta": {
+      "title": "Join Image with Alpha"
+    }
+  },
+  "182": {
+    "inputs": {
+      "text": [
+        "177",
+        0
+      ],
+      "disable_named_entity": false,
+      "disable_unusual_word": false,
+      "disable_blacklist_word": false
+    },
+    "class_type": "ContentModerator",
+    "_meta": {
+      "title": "Content Moderator"
+    }
+  },
+  "187": {
+    "inputs": {
+      "seed": 0
+    },
+    "class_type": "Seed (rgthree)",
+    "_meta": {
+      "title": "Seed (rgthree)"
+    }
+  }
+}
