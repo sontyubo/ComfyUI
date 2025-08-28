@@ -1,0 +1,16 @@
+# parent_dir github_url [branch]
+/workspace/ComfyUI/custom_nodes https://github.com/cubiq/ComfyUI_IPAdapter_plus
+/workspace/ComfyUI/custom_nodes https://github.com/radius5-study/comfyui-content-moderator
+/workspace/ComfyUI/custom_nodes https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+/workspace/ComfyUI/custom_nodes https://github.com/radius5-study/comfyui-image-size-limiter
+/workspace/ComfyUI/custom_nodes https://github.com/jjkramhoeft/ComfyUI-Jjk-Nodes
+/workspace/ComfyUI/custom_nodes https://github.com/ali1234/comfyui-job-iterator
+/workspace/ComfyUI/custom_nodes https://github.com/kijai/ComfyUI-Lotus
+/workspace/ComfyUI/custom_nodes https://github.com/radius5-study/comfyui-prompt-generator
+/workspace/ComfyUI/custom_nodes https://github.com/pythongosssss/ComfyUI-WD14-Tagger
+/workspace/ComfyUI/custom_nodes https://github.com/radius5-study/copainter-colorization-custom-nodes
+/workspace/ComfyUI/custom_nodes https://github.com/radius5-study/copainter-custom-nodes feat/switch-latent
+/workspace/ComfyUI/custom_nodes https://github.com/radius5-study/copainter-custom-nodes main
+/workspace/ComfyUI/custom_nodes https://github.com/alpertunga-bile/prompt-generator-comfyui
+/workspace/ComfyUI/custom_nodes https://github.com/rgthree/rgthree-comfy
+/workspace/ComfyUI/custom_nodes https://github.com/ltdrdata/was-node-suite-comfyui
