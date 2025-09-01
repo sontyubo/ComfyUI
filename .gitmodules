@@ -1,47 +1,47 @@
-[submodule "/workspace/ComfyUI/custom_nodes/rgthree-comfy"]
-	path = /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[submodule "custom_nodes/rgthree-comfy"]
+path = custom_nodes/rgthree-comfy
 	url = https://github.com/rgthree/rgthree-comfy
-[submodule "/workspace/ComfyUI/custom_nodes/was-node-suite-comfyui"]
-	path = /workspace/ComfyUI/custom_nodes/was-node-suite-comfyui
+[submodule "custom_nodes/was-node-suite-comfyui"]
+path = custom_nodes/was-node-suite-comfyui
 	url = https://github.com/WASasquatch/was-node-suite-comfyui
-[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts"]
-	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+[submodule "custom_nodes/ComfyUI-Custom-Scripts"]
+path = custom_nodes/ComfyUI-Custom-Scripts
 	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
-[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus"]
-	path = /workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[submodule "custom_nodes/ComfyUI_IPAdapter_plus"]
+path = custom_nodes/ComfyUI_IPAdapter_plus
 	url = https://github.com/cubiq/ComfyUI_IPAdapter_plus
-[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger"]
-	path = /workspace/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger
+[submodule "custom_nodes/ComfyUI-WD14-Tagger"]
+path = custom_nodes/ComfyUI-WD14-Tagger
 	url = https://github.com/pythongosssss/ComfyUI-WD14-Tagger
-[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes"]
-	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Jjk-Nodes
+[submodule "custom_nodes/ComfyUI-Jjk-Nodes"]
+path = custom_nodes/ComfyUI-Jjk-Nodes
 	url = https://github.com/jjkramhoeft/ComfyUI-Jjk-Nodes
-[submodule "/workspace/ComfyUI/custom_nodes/prompt-generator-comfyui"]
-	path = /workspace/ComfyUI/custom_nodes/prompt-generator-comfyui
+[submodule "custom_nodes/prompt-generator-comfyui"]
+path = custom_nodes/prompt-generator-comfyui
 	url = https://github.com/alpertunga-bile/prompt-generator-comfyui
-[submodule "/workspace/ComfyUI/custom_nodes/ComfyUI-Manager"]
-	path = /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[submodule "custom_nodes/ComfyUI-Manager"]
+path = custom_nodes/ComfyUI-Manager
 	url = https://github.com/Comfy-Org/ComfyUI-Manager
-[submodule "/workspace/ComfyUI/custom_nodes/comfyui-job-iterator"]
-	path = /workspace/ComfyUI/custom_nodes/comfyui-job-iterator
+[submodule "custom_nodes/comfyui-job-iterator"]
+path = custom_nodes/comfyui-job-iterator
 	url = https://github.com/ali1234/comfyui-job-iterator
-[submodule "/workspace/ComfyUI/custom_nodes/copainter-colorization-custom-nodes"]
-	path = /workspace/ComfyUI/custom_nodes/copainter-colorization-custom-nodes
+[submodule "custom_nodes/copainter-colorization-custom-nodes"]
+path = custom_nodes/copainter-colorization-custom-nodes
 	url = https://github.com/radius5-study/copainter-colorization-custom-nodes
-[submodule "/workspace/ComfyUI/custom_nodes/comfyui-prompt-generator"]
-	path = /workspace/ComfyUI/custom_nodes/comfyui-prompt-generator
+[submodule "custom_nodes/comfyui-prompt-generator"]
+path = custom_nodes/comfyui-prompt-generator
 	url = https://github.com/radius5-study/comfyui-prompt-generator
-[submodule "/workspace/ComfyUI/custom_nodes/comfyui-content-moderator"]
-	path = /workspace/ComfyUI/custom_nodes/comfyui-content-moderator
+[submodule "custom_nodes/comfyui-content-moderator"]
+path = custom_nodes/comfyui-content-moderator
 	url = https://github.com/radius5-study/comfyui-content-moderator
-[submodule "/workspace/ComfyUI/custom_nodes/comfyui-image-size-limiter"]
-	path = /workspace/ComfyUI/custom_nodes/comfyui-image-size-limiter
+[submodule "custom_nodes/comfyui-image-size-limiter"]
+path = custom_nodes/comfyui-image-size-limiter
 	url = https://github.com/radius5-study/comfyui-image-size-limiter
-[submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes-feat-switch-latent"]
-	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes-feat-switch-latent
+[submodule "custom_nodes/copainter-custom-nodes-feat-switch-latent"]
+path = custom_nodes/copainter-custom-nodes-feat-switch-latent
 	url = https://github.com/radius5-study/copainter-custom-nodes
 	branch = feat/switch-latent
-[submodule "/workspace/ComfyUI/custom_nodes/copainter-custom-nodes-main"]
-	path = /workspace/ComfyUI/custom_nodes/copainter-custom-nodes-main
+[submodule "custom_nodes/copainter-custom-nodes-main"]
+path = custom_nodes/copainter-custom-nodes-main
 	url = https://github.com/radius5-study/copainter-custom-nodes
 	branch = main
