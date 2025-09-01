@@ -1,0 +1,2 @@
+roberta_large_ner_english:
+    base_path: /workspace/ComfyUI/models/roberta-large-ner-english
