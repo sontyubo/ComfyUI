@@ -1,0 +1,375 @@
+{
+  "4": {
+    "inputs": {
+      "ckpt_name": "illustriousXL20_v20.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "7": {
+    "inputs": {
+      "text": "old, early, signature, username, logo, bad hands, mutated hands, mammal, anthro, furry, ambiguous form, feral, semi-anthro, bad anatomy, bad proportions, extra limbs, extra digit, extra legs, disfigured, missing arms, too many fingers, fused fingers, missing fingers, unclear eyes, watermark, ai-generated, (flat color:2.0), blush",
+      "clip": [
+        "265",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "17": {
+    "inputs": {
+      "samples": [
+        "74",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "59": {
+    "inputs": {
+      "pixels": [
+        "277",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "74": {
+    "inputs": {
+      "seed": [
+        "292",
+        0
+      ],
+      "steps": 28,
+      "cfg": 4.5,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "265",
+        0
+      ],
+      "positive": [
+        "214",
+        0
+      ],
+      "negative": [
+        "214",
+        1
+      ],
+      "latent_image": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "95": {
+    "inputs": {
+      "model": "wd-swinv2-tagger-v3",
+      "threshold": 0.35000000000000003,
+      "character_threshold": 0.85,
+      "replace_underscore": true,
+      "trailing_comma": true,
+      "exclude_tags": "sketch, rough",
+      "image": [
+        "271",
+        0
+      ]
+    },
+    "class_type": "WD14Tagger|pysssss",
+    "_meta": {
+      "title": "WD14 Tagger 🐍"
+    }
+  },
+  "96": {
+    "inputs": {
+      "text": [
+        "170",
+        0
+      ],
+      "clip": [
+        "265",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "170": {
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "true",
+      "text_a": [
+        "282",
+        0
+      ],
+      "text_b": [
+        "95",
+        0
+      ],
+      "text_c": [
+        "191",
+        0
+      ]
+    },
+    "class_type": "Text Concatenate",
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "191": {
+    "inputs": {
+      "text": "masterpiece, high score, great score, absurdres,"
+    },
+    "class_type": "JjkText",
+    "_meta": {
+      "title": "QualityTag"
+    }
+  },
+  "214": {
+    "inputs": {
+      "strength": 1,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "96",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "control_net": [
+        "216",
+        0
+      ],
+      "image": [
+        "277",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "ControlNetApplyAdvanced"
+    }
+  },
+  "216": {
+    "inputs": {
+      "control_net_name": "colorization-v2-fp16.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet Model"
+    }
+  },
+  "223": {
+    "inputs": {
+      "image": "0b5adf83-1afc-4f02-9d47-a7fa818f9b65_color.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image (Color)"
+    }
+  },
+  "233": {
+    "inputs": {
+      "image": "0b5adf83-1afc-4f02-9d47-a7fa818f9b65_line.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image (Line)"
+    }
+  },
+  "243": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "287",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "265": {
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "default-ill-v2.safetensors",
+        "strength": 0.7
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "sdxl-lora-deflat.safetensors",
+        "strength": 1
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)",
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "268": {
+    "inputs": {
+      "color_preserve_ratio": 0,
+      "generated_image": [
+        "17",
+        0
+      ],
+      "color_image": [
+        "223",
+        0
+      ],
+      "line_image": [
+        "233",
+        0
+      ],
+      "color_mask": [
+        "223",
+        1
+      ],
+      "line_mask": [
+        "233",
+        1
+      ]
+    },
+    "class_type": "ColorizationPostprocessV2",
+    "_meta": {
+      "title": "Colorization Postprocess V2"
+    }
+  },
+  "271": {
+    "inputs": {
+      "resize_pixel": 1280,
+      "color_image": [
+        "223",
+        0
+      ],
+      "line_image": [
+        "233",
+        0
+      ],
+      "color_mask": [
+        "223",
+        1
+      ],
+      "line_mask": [
+        "233",
+        1
+      ]
+    },
+    "class_type": "ColorizationPreprocess",
+    "_meta": {
+      "title": "Colorization Preprocess"
+    }
+  },
+  "277": {
+    "inputs": {
+      "quality": 50,
+      "img": [
+        "271",
+        0
+      ]
+    },
+    "class_type": "JpegNoiseAdd",
+    "_meta": {
+      "title": "Jpeg Noise Add"
+    }
+  },
+  "282": {
+    "inputs": {
+      "text": ""
+    },
+    "class_type": "JjkText",
+    "_meta": {
+      "title": "TriggerWords"
+    }
+  },
+  "287": {
+    "inputs": {
+      "width": [
+        "291",
+        0
+      ],
+      "height": [
+        "291",
+        1
+      ],
+      "resampling": "lanczos",
+      "img": [
+        "268",
+        0
+      ]
+    },
+    "class_type": "Resize",
+    "_meta": {
+      "title": "Resize"
+    }
+  },
+  "291": {
+    "inputs": {
+      "image": [
+        "233",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "GetImageSize"
+    }
+  },
+  "292": {
+    "inputs": {
+      "seed": -1
+    },
+    "class_type": "Seed (rgthree)",
+    "_meta": {
+      "title": "Seed (rgthree)"
+    }
+  }
+}
